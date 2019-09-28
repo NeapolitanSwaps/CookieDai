@@ -1,5 +1,8 @@
 pragma solidity ^0.5.2;
 
+import "./Leverger.sol";
+
+
 /**
  * @title RegistryInterface Interface 
  */
@@ -107,7 +110,7 @@ contract UserNote {
 /**
  * @title User Owned Contract Wallet
  */
-contract UserWallet is UserAuth, UserNote {
+contract UserWallet is UserAuth, UserNote, Leverger {
 
     event LogExecute(address target, uint srcNum, uint sessionNum);
 

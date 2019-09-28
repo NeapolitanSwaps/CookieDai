@@ -4,5 +4,8 @@ import "./compound/CookieCompound.sol";
 
 
 contract Leverger is CookieCompound {
-    
+
+   function cook() external {
+       
+   }
 }
